@@ -272,14 +272,31 @@ body::webkit-scrollbar-thumb:hover {
 }
 
 .email-field {
-    23:25
+    font-size: var(--fs-7);
+    padding: 8px 16px;
+    border-radius: var(--border-radius-sm);
+    border: 1px solid var(--nav-color);
+    margin-bottom: 16px;
 }
 
+.btn-newsletter {
+  background: var(--light-black-color);
+  color: var(--white);
+  font-size: var(--fs-7);
+  font-weight: var(--weight-600);
+  text-transform: uppercase;
+  padding: 10px 15px;
+  border-radius: var(--border-radius-sm);
+  margin: auto;
+  transition: var(--transition-timing);
+}
 
+.btn-newsletter:hover {
+background-color: var(--main-color);
+}
 
-
-
-
+.modal-thankyou{display: none;
+font-weight: var(--weight-600);}
 
 
 
@@ -415,7 +432,7 @@ body::webkit-scrollbar-thumb:hover {
   z-index: 1;
 }
 
-/* ====================== MOBILE NAVIGATION MENU STYLES ====================== */
+/* ====================== MOBILE NAVIGATION MENU STYLES START ====================== */
 
 .mobile-navigation-menu {
   background: var(--white);
@@ -499,7 +516,9 @@ body::webkit-scrollbar-thumb:hover {
 }
 
 .menu-category .submenu-category-list {
-  margin-left: 10px;
+  margin-left: 2px;
+  /* transition: max-height 0.5s ease-in-out, visibility 0.5s ease-in-out; */
+
 }
 
 .submenu-title {
@@ -515,15 +534,21 @@ body::webkit-scrollbar-thumb:hover {
 
 .submenu-category-list {
   max-height: 0;
-  overflow: scroll;
+  overflow: hidden;
   visibility: hidden;
   transition: 0.5s ease-in-out;
 }
 
 .submenu-category-list.active {
-  max-height: 148px;
+  max-height: 800px;
   visibility: visible;
 }
+/* ========================================================================================== */
+
+.fa-smaller-sub-menu {font-size: 12px;}
+
+
+
 /* ========================================================================================== */
 
 .menu-bottom .menu-category-list {
@@ -573,4 +598,35 @@ body::webkit-scrollbar-thumb:hover {
   border: 1px solid hsla(100, 100%, 100%, 6);
   box-shadow: rgba(100, 100, 111, 0.3) 0px 7px 29px 0px;
 }
-/* ========================================================================================== */
+/* /* ====================== MOBILE NAVIGATION MENU STYLES END ====================== */
+ 
+/* ====================== BANNER ====================== */
+
+.banner {margin: 30px 0;}
+
+.slider-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: var(--border-radius-md);
+  overflow: auto hidden;
+  scroll-snap-type: inline mandatory;
+  overscroll-behavior-inline: contain;
+}
+
+.slider-item {
+  position: relative;
+  min-width: 100%;
+  max-height: 450px;
+  aspect-ratio: 1 / 1;
+  border-radius: var(--border-radius-md);
+  overflow: hidden;
+  scroll-snap-align: start;
+}
+
+.slider-item .banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: right; /*change this to fit your choosen image*/
+}
