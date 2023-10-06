@@ -24,14 +24,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Function to handle the subscribe button click
   const handleSubscribeClick = function () {
-    // Check if the email field is not empty
     if (inputField.value.trim() !== "") {
       // Hide the button and input field
       subscribeButton.style.display = "none";
       inputField.style.display = "none";
-
+  
       // Show the thank you message
       thankYouMessage.style.display = "block";
+  
+      // Delay closing the modal for a few seconds (e.g., 5 seconds)
+      setTimeout(() => {
+        modalCloseFunc();
+      }, 3000); // Adjust the delay time as needed
     }
   };
 
@@ -93,4 +97,19 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
   
+// JavaScript to dynamically adjust the mobile navigation menu's height
+  document.addEventListener("DOMContentLoaded", function () {
+  function adjustMobileMenuHeight() {
+    const mobileMenu = document.querySelector(".mobile-navigation-menu");
+    const windowHeight = window.innerHeight;
+  
+    // Set the menu's height to a percentage of the window height (e.g., 90%)
+    mobileMenu.style.height = `${windowHeight * 1}px`;
+  }
+  
+  // Call the function when the page loads and when it's resized
+  window.addEventListener("load", adjustMobileMenuHeight);
+  window.addEventListener("resize", adjustMobileMenuHeight);
+  
+});
 
