@@ -156,128 +156,137 @@ body::webkit-scrollbar-thumb:hover {
 /* ====================== OVERLAY  ====================== */
 
 .overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background: hsla(0, 0%, 0%, 0.5);
-    opacity: 0;
-    pointer-events: none;
-    z-index: 15;
-    transition: 0.5s ease;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: hsla(0, 0%, 0%, 0.5);
+  opacity: 0;
+  pointer-events: none;
+  z-index: 15;
+  transition: 0.5s ease;
 }
 
 .overlay.active {
-    opacity: 1;
-    pointer-events: all;
+  opacity: 1;
+  pointer-events: all;
 }
 
 /* ====================== MODAL  ====================== */
 
 .modal {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    height: 100vh;
-    background: hsla(0, 0%, 0%, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100vh;
+  background: hsla(0, 0%, 0%, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  z-index: 10;
+  animation: popup 1s ease-in-out 5s forwards;
+}
+
+@keyframes popup {
+  0% {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-    z-index: 10;
-    animation: popup 1s ease-in-out 5s forwards;
+  }
+
+  100% {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+  }
 }
 
-
-@keyframes popup {
-
-    0% {
-        opacity: 0;
-        visibility: hidden;
-        pointer-events: none;
-    }
-
-    100% {
-        opacity: 1;
-        visibility: visible;
-        pointer-events: all;
-    }
+.modal.closed {
+  display: none;
 }
-
-.modal.closed {display: none;}
 
 .modal.close-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
 }
 
-.newsletter-img { display: none;}
+.newsletter-img {
+  display: none;
+}
 
 .modal-content {
-    position: relative;
-    max-width: 350px;
-    margin: 20px;
-    background: var(--white);
-    border-radius: var(--border-radius-md);
-    overflow: hidden;
-    z-index: 2;
-    animation: scaleUp 0.5s ease-in-out 5s forwards;
+  position: relative;
+  max-width: 350px;
+  margin: 20px;
+  background: var(--white);
+  border-radius: var(--border-radius-md);
+  overflow: hidden;
+  z-index: 2;
+  animation: scaleUp 0.5s ease-in-out 5s forwards;
 }
 
 @keyframes scaleup {
-
-    0% {transform: scale(0.9s);}
-    100% {transform: scale(1s);}
+  0% {
+    transform: scale(0.9s);
+  }
+  100% {
+    transform: scale(1s);
+  }
 }
 
 .modal-close-btn {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    background: var(--main-color);
-    color: var(--white);
-    font-size: 16px;
-    padding: 5px;
-    border-radius: var(--border-radius-sm);
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: var(--main-color);
+  color: var(--white);
+  font-size: 16px;
+  padding: 5px;
+  border-radius: var(--border-radius-sm);
 }
 
-.modal-close-btn:hover {opacity: 0.9s;}
+.modal-close-btn:hover {
+  opacity: 0.9s;
+}
 
 .newsletter {
-    padding: 50px 30px;
-    text-align: center;
+  padding: 50px 30px;
+  text-align: center;
 }
 
-.newsletter-header {margin-bottom: 20px;}
+.newsletter-header {
+  margin-bottom: 20px;
+}
 
 .newsletter-title {
-    color: var(--light-black-color);
-    font-size: var(--fs-2);
-    font-weight: var(--weight-600);
-    margin-bottom: 10px;
+  color: var(--light-black-color);
+  font-size: var(--fs-2);
+  font-weight: var(--weight-600);
+  margin-bottom: 10px;
 }
 
 .newsletter-desc {
-    color: var(--lighter-black-color);
-    font-size: var(--fs-7);
-    line-height: 1.6;
+  color: var(--lighter-black-color);
+  font-size: var(--fs-7);
+  line-height: 1.6;
 }
 
 .email-field {
-    font-size: var(--fs-7);
-    padding: 8px 16px;
-    border-radius: var(--border-radius-sm);
-    border: 1px solid var(--nav-color);
-    margin-bottom: 16px;
+  font-size: var(--fs-7);
+  padding: 8px 16px;
+  border-radius: var(--border-radius-sm);
+  border: 1px solid var(--nav-color);
+  margin-bottom: 16px;
 }
 
 .btn-newsletter {
@@ -293,13 +302,13 @@ body::webkit-scrollbar-thumb:hover {
 }
 
 .btn-newsletter:hover {
-background-color: var(--main-color);
+  background-color: var(--main-color);
 }
 
-.modal-thankyou{display: none;
-font-weight: var(--weight-600);}
-
-
+.modal-thankyou {
+  display: none;
+  font-weight: var(--weight-600);
+}
 
 /* ====================== HEADER  ====================== */
 .header-top,
@@ -387,19 +396,15 @@ font-weight: var(--weight-600);}
   color: var(--light-black-color);
 }
 
-
 /* ====================== MOBILE NAVIGATION HOVER ====================== */
 .mobile-bottom-navigation .action-btn:hover {
   background-color: #4c00b0;
   color: var(--nav-color);
 }
 
-
 /* .action-btn span:hover{
   color: var(--nav-color);
 } */
-
-
 
 /* ====================== MOBILE NAVIGATION SPAN SIZE ====================== */
 .mobile-bottom-navigation .action-btn span:not(:nth-child(2)) {
@@ -525,13 +530,11 @@ font-weight: var(--weight-600);}
 .accordion-menu.active .fa-minus {
   display: block;
   color: var(--light-black-color);
-
 }
 
 .menu-category .submenu-category-list {
   margin-left: 2px;
   /* transition: max-height 0.5s ease-in-out, visibility 0.5s ease-in-out; */
-
 }
 
 .submenu-title {
@@ -558,9 +561,9 @@ font-weight: var(--weight-600);}
 }
 /* ========================================================================================== */
 
-.fa-smaller-sub-menu {font-size: 12px;}
-
-
+.fa-smaller-sub-menu {
+  font-size: 12px;
+}
 
 /* ========================================================================================== */
 
@@ -612,10 +615,12 @@ font-weight: var(--weight-600);}
   box-shadow: rgba(100, 100, 111, 0.3) 0px 7px 29px 0px;
 }
 /* /* ====================== MOBILE NAVIGATION MENU STYLES END ====================== */
- 
+
 /* ====================== BANNER ====================== */
 
-.banner {margin: 30px 0;}
+.banner {
+  margin: 30px 0;
+}
 
 .slider-container {
   display: flex;

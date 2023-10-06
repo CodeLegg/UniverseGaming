@@ -28,10 +28,10 @@ document.addEventListener("DOMContentLoaded", function () {
       // Hide the button and input field
       subscribeButton.style.display = "none";
       inputField.style.display = "none";
-  
+
       // Show the thank you message
       thankYouMessage.style.display = "block";
-  
+
       // Delay closing the modal for a few seconds (e.g., 5 seconds)
       setTimeout(() => {
         modalCloseFunc();
@@ -42,7 +42,6 @@ document.addEventListener("DOMContentLoaded", function () {
   // Subscribe button click event listener
   subscribeButton.addEventListener("click", handleSubscribeClick);
 });
-
 
 // mobile menu variables
 document.addEventListener("DOMContentLoaded", function () {
@@ -96,22 +95,19 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
-  
+
 // JavaScript to dynamically adjust the mobile navigation menu's height
-  document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () {
   // JavaScript to dynamically adjust the mobile navigation menu's height
-function adjustMobileMenuHeight() {
-  const mobileMenu = document.querySelector(".mobile-navigation-menu");
-  const windowHeight = window.innerHeight;
+  function adjustMobileMenuHeight() {
+    const mobileMenu = document.querySelector(".mobile-navigation-menu");
+    const windowHeight = window.innerHeight;
 
-  // Set the menu's height to a percentage of the window height (e.g., 90%)
-  mobileMenu.style.height = `${windowHeight * 1}px`;
-}
+    // Set the menu's height to a percentage of the window height (e.g., 90%)
+    mobileMenu.style.height = `${windowHeight * 1}px`;
+  }
 
-// Call the function when the page loads and when it's resized
-window.addEventListener("load", adjustMobileMenuHeight);
-window.addEventListener("resize", adjustMobileMenuHeight);
-
-  
+  // Call the function when the page loads and when it's resized
+  window.addEventListener("load", adjustMobileMenuHeight);
+  window.addEventListener("resize", adjustMobileMenuHeight);
 });
-
