@@ -386,9 +386,14 @@ font-weight: var(--weight-600);}
 }
 
 .btmnav{color: var(--light-black-color);}
+.action-btn{color: var(--light-black-color);}
 /* ====================== MOBILE NAVIGATION HOVER ====================== */
 .mobile-bottom-navigation .action-btn:hover {
   background-color: #4c00b0;
+  color: var(--nav-color);
+}
+
+.action-btn .btmnav:hover{
   color: var(--nav-color);
 }
 
