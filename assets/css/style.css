@@ -384,6 +384,8 @@ font-weight: var(--weight-600);}
   border-radius: 100%;
   transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
 }
+
+.fa-solid{color: var(--light-black-color);}
 /* ====================== MOBILE NAVIGATION HOVER ====================== */
 .mobile-bottom-navigation .action-btn:hover {
   background-color: #4c00b0;
