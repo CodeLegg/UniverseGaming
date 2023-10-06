@@ -22,22 +22,22 @@ document.addEventListener("DOMContentLoaded", function () {
   modalCloseOverlay.addEventListener("click", modalCloseFunc);
   modalCloseBtn.addEventListener("click", modalCloseFunc);
 
-  // // Function to handle the subscribe button click
-  // const handleSubscribeClick = function () {
-  //   if (inputField.value.trim() !== "") {
-  //     // Hide the button and input field
-  //     subscribeButton.style.display = "none";
-  //     inputField.style.display = "none";
+  // Function to handle the subscribe button click
+  const handleSubscribeClick = function () {
+    if (inputField.value.trim() !== "") {
+      // Hide the button and input field
+      subscribeButton.style.display = "none";
+      inputField.style.display = "none";
   
-  //     // Show the thank you message
-  //     thankYouMessage.style.display = "block";
+      // Show the thank you message
+      thankYouMessage.style.display = "block";
   
-  //     // Delay closing the modal for a few seconds (e.g., 5 seconds)
-  //     setTimeout(() => {
-  //       modalCloseFunc();
-  //     }, 3000); // Adjust the delay time as needed
-  //   }
-  // };
+      // Delay closing the modal for a few seconds (e.g., 5 seconds)
+      setTimeout(() => {
+        modalCloseFunc();
+      }, 3000); // Adjust the delay time as needed
+    }
+  };
 
   // Subscribe button click event listener
   subscribeButton.addEventListener("click", handleSubscribeClick);
