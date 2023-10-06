@@ -102,7 +102,6 @@ input::placeholder {
 
 body {
   background: var(--white);
-  padding-top: env(safe-area-inset-top);
 }
 
 /* ====================== SCROLL STYLES ====================== */
