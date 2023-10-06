@@ -517,11 +517,14 @@ font-weight: var(--weight-600);}
 .accordion-menu.active .fa-plus,
 .accordion-menu .fa-minus {
   display: none;
+  color: var(--light-black-color);
 }
 
 .accordion-menu .fa-plus,
 .accordion-menu.active .fa-minus {
   display: block;
+  color: var(--light-black-color);
+
 }
 
 .menu-category .submenu-category-list {
