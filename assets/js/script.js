@@ -94,21 +94,18 @@ document.addEventListener("DOMContentLoaded", function () {
 });
   
 // JavaScript to dynamically adjust the mobile navigation menu's height
-document.addEventListener("DOMContentLoaded", function () {
+  document.addEventListener("DOMContentLoaded", function () {
   function adjustMobileMenuHeight() {
     const mobileMenu = document.querySelector(".mobile-navigation-menu");
     const windowHeight = window.innerHeight;
-
-    // Check if the mobile menu exists on the page
-    if (mobileMenu) {
-      // Set the menu's height to a percentage of the window height (e.g., 90%)
-      mobileMenu.style.height = `${windowHeight * 1}px`;
-    }
+  
+    // Set the menu's height to a percentage of the window height (e.g., 90%)
+    mobileMenu.style.height = `${windowHeight * 1}px`;
   }
-
+  
   // Call the function when the page loads and when it's resized
   window.addEventListener("load", adjustMobileMenuHeight);
   window.addEventListener("resize", adjustMobileMenuHeight);
+  
 });
-
 
