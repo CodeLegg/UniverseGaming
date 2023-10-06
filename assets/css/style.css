@@ -386,6 +386,10 @@ font-weight: var(--weight-600);}
   color: var(--light-black-color);
 }
 
+.mobile-navigation-menu {
+  padding-top: env(safe-area-inset-top);
+}
+
 /* ====================== MOBILE NAVIGATION HOVER ====================== */
 .mobile-bottom-navigation .action-btn:hover {
   background-color: #4c00b0;
