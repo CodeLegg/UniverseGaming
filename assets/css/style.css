@@ -452,6 +452,7 @@ font-weight: var(--weight-600);}
   max-width: 320px;
   height: 100vh;
   padding: 20px;
+  padding-top: 80px;
   box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.1);
   overflow-y: scroll;
   overscroll-behavior: contain;
