@@ -100,7 +100,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const windowHeight = window.innerHeight;
   
     // Set the menu's height to a percentage of the window height (e.g., 90%)
-    mobileMenu.style.height = `${windowHeight * 0.9}px`;
+    mobileMenu.style.height = `${windowHeight * 0.98}px`;
   }
   
   // Call the function when the page loads and when it's resized
