@@ -353,7 +353,7 @@ font-weight: var(--weight-600);}
   color: var(--main-color);
 }
 
-/* ====================== MOBILE NAVIGATION STYLES ====================== */
+/* ====================== MOBILE BOTTOM NAVIGATION STYLES ====================== */
 .mobile-bottom-navigation {
   background: var(--white);
   position: fixed;
@@ -386,9 +386,6 @@ font-weight: var(--weight-600);}
   color: var(--light-black-color);
 }
 
-.mobile-navigation-menu {
-  padding-top: env(safe-area-inset-top);
-}
 
 /* ====================== MOBILE NAVIGATION HOVER ====================== */
 .mobile-bottom-navigation .action-btn:hover {
@@ -444,7 +441,7 @@ font-weight: var(--weight-600);}
 .mobile-bottom-navigation .action-btn:hover .labelcart {
   background-color: var(--light-black-color);
 }
-/* ====================== MOBILE NAVIGATION MENU STYLES START ====================== */
+/* ====================== MOBILE NAVIGATION SLIDE MENU STYLES START ====================== */
 
 .mobile-navigation-menu {
   background: var(--white);
@@ -453,7 +450,7 @@ font-weight: var(--weight-600);}
   left: 0;
   width: 100%;
   max-width: 320px;
-  height: 100vh;
+  height: 100%;
   padding: 20px;
   box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.1);
   overflow-y: scroll;
