@@ -383,27 +383,21 @@ font-weight: var(--weight-600);}
   font-size: 16px;
   border-radius: 100%;
   transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+  color: var(--light-black-color);
 }
 
-.btmnav{color: var(--light-black-color);}
-
-.action-btn{color: var(--light-black-color);}
 /* ====================== MOBILE NAVIGATION HOVER ====================== */
 .mobile-bottom-navigation .action-btn:hover {
   background-color: #4c00b0;
   color: var(--nav-color);
 }
 
-.btmnav:hover{
-  color: var(--nav-color);
-}
-.action-btn :hover{
-  color: var(--nav-color);
-}
 
-.mobile-bottom-navigation .action-btn:hover .labelcart {
-  background-color: var(--light-black-color);
-}
+/* .action-btn span:hover{
+  color: var(--nav-color);
+} */
+
+
 
 /* ====================== MOBILE NAVIGATION SPAN SIZE ====================== */
 .mobile-bottom-navigation .action-btn span:not(:nth-child(2)) {
@@ -443,6 +437,9 @@ font-weight: var(--weight-600);}
   z-index: 1;
 }
 
+.mobile-bottom-navigation .action-btn:hover .labelcart {
+  background-color: var(--light-black-color);
+}
 /* ====================== MOBILE NAVIGATION MENU STYLES START ====================== */
 
 .mobile-navigation-menu {
