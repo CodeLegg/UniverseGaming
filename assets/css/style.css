@@ -311,6 +311,25 @@ body::webkit-scrollbar-thumb:hover {
 }
 
 /* ====================== HEADER  ====================== */
+
+/* =========== MOBILE BAR START  ============ */
+
+.top-mobile-bar{
+  background-color: var(--main-color);
+height: 30px;
+font-size: 14px;
+text-align: center;
+line-height: 1.8;
+text-transform: uppercase;
+font-weight: 400;
+color: var(--nav-color);
+box-shadow: 0 5px 10px hsla(0, 0%, 0%, 0.25);
+}
+
+/* =========== MOBILE BAR END ============ */
+
+
+
 .header-top,
 .header-user-actions,
 .desktop-navigation-menu {
@@ -323,11 +342,17 @@ body::webkit-scrollbar-thumb:hover {
 }
 
 .header-logo {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
-.header-logo img {
-  margin: auto;
+.logo-supporting-text {
+  font-size: 16px;
+  font-weight: bolder;
+  display: flex;
+  white-space: nowrap;
+  align-items: center;
+  justify-content: center;
+  color: var(--light-black-color);
 }
 
 /* ====================== SEARCH  ====================== */
