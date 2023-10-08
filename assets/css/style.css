@@ -425,7 +425,7 @@ body::webkit-scrollbar-thumb:hover {
   align-items: center;
   padding: 5px 0;
   box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.25);
-  z-index: 1000;
+  z-index: 5;
 }
 
 .action-btn {
@@ -452,7 +452,6 @@ body::webkit-scrollbar-thumb:hover {
   --fa-secondary-color: #fff;
   --fa-secondary-opacity: 1;
 }
-
 .action-btn:hover {
   background-color: #4c00b0;
   color: var(--nav-color);
@@ -538,7 +537,7 @@ body::webkit-scrollbar-thumb:hover {
   overscroll-behavior: contain;
   visibility: hidden;
   transition: 0.5s ease;
-  z-index: 20;
+  z-index: 1000;
 }
 
 .mobile-navigation-menu.active {
