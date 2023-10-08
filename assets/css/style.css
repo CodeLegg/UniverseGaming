@@ -428,7 +428,7 @@ body::webkit-scrollbar-thumb:hover {
   z-index: 5;
 }
 
-.action-btn {
+.mobile-bottom-navigation .action-btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -444,30 +444,12 @@ body::webkit-scrollbar-thumb:hover {
 }
 
 /* ====================== MOBILE NAVIGATION HOVER ====================== */
-.fa-duotone.fa-shop:hover,
-.fa-duotone.fa-hammer:hover,
-.fa-duotone.fa-house-chimney:hover,
-.fa-duotone.fa-cart-shopping:hover {
-  --fa-primary-color: #fff;
-  --fa-secondary-color: #fff;
-  --fa-secondary-opacity: 1;
-}
+
 .action-btn:hover {
   background-color: #4c00b0;
   color: var(--nav-color);
 }
 
-.fa-duotone.fa-shop,
-.fa-duotone.fa-hammer,
-.fa-duotone.fa-house-chimney,
-.fa-duotone.fa-cart-shopping {
-  --fa-primary-opacity: 1;
-  --fa-primary-color: #101010;
-  --fa-secondary-opacity: 1;
-  --fa-secondary-color: #4c00b0;
-
-  /* transition: color 0.3s ease; */
-}
 
 /* ====================== MOBILE NAVIGATION SPAN SIZE ====================== */
 .mobile-bottom-navigation .action-btn span:not(:nth-child(2)) {
