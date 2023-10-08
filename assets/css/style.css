@@ -530,7 +530,7 @@ body::webkit-scrollbar-thumb:hover {
   padding: 20px 20px 20px 0;
   padding-left: 32px; /* Adjust this value as needed */
 
-  box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.1);
+  /* box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.1); */
   overflow-y: scroll;
   overscroll-behavior: contain;
   visibility: hidden;
