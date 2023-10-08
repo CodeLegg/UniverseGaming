@@ -466,15 +466,8 @@ body::webkit-scrollbar-thumb:hover {
   --fa-secondary-opacity: 1;
   --fa-secondary-color: #4c00b0;
 
-  transition: color 0.3s ease;
+  /* transition: color 0.3s ease; */
 }
-
-/* Individual hover styles for each icon */
-
-
-/* .action-btn span:hover{
-  color: var(--nav-color);
-} */
 
 /* ====================== MOBILE NAVIGATION SPAN SIZE ====================== */
 .mobile-bottom-navigation .action-btn span:not(:nth-child(2)) {
