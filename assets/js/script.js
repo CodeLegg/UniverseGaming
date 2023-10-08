@@ -1,4 +1,6 @@
-// overlay variables
+
+
+    // overlay variables
 document.addEventListener("DOMContentLoaded", function () {
   "use strict";
 
@@ -98,16 +100,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // JavaScript to dynamically adjust the mobile navigation menu's height
 document.addEventListener("DOMContentLoaded", function () {
-  // JavaScript to dynamically adjust the mobile navigation menu's height
   function adjustMobileMenuHeight() {
     const mobileMenu = document.querySelector(".mobile-navigation-menu");
+    const topMobileBar = document.querySelector(".top-mobile-bar");
     const windowHeight = window.innerHeight;
+    const topMobileBarHeight = topMobileBar.clientHeight;
 
-    // Set the menu's height to a percentage of the window height (e.g., 90%)
-    mobileMenu.style.height = `${windowHeight * 1}px`;
+    // Set the menu's height to a percentage of the window height minus the top bar height
+    mobileMenu.style.height = `${windowHeight - topMobileBarHeight}px`;
   }
 
-  // Call the function when the page loads and when it's resized
   window.addEventListener("load", adjustMobileMenuHeight);
   window.addEventListener("resize", adjustMobileMenuHeight);
 });
+
