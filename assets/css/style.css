@@ -342,7 +342,7 @@ body::webkit-scrollbar-thumb:hover {
 
 @keyframes marquee {
   0% {
-    transform: translateX(180%);
+    transform: translateX(250%);
   }
   100% {
     transform: translateX(-200%);
