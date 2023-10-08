@@ -443,7 +443,7 @@ body::webkit-scrollbar-thumb:hover {
 }
 
 /* ====================== MOBILE NAVIGATION HOVER ====================== */
-.mobile-bottom-navigation .action-btn:hover {
+.action-btn:hover {
   background-color: #4c00b0;
   color: var(--nav-color);
 }
@@ -454,7 +454,7 @@ body::webkit-scrollbar-thumb:hover {
 .fa-duotone.fa-cart-shopping {
   --fa-primary-opacity: 1;
   --fa-primary-color: #101010;
-  --fa-secondary-opacity: 0.8;
+  --fa-secondary-opacity: 1;
   --fa-secondary-color: #4c00b0;
 
   transition: color 0.3s ease;
