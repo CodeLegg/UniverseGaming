@@ -157,7 +157,7 @@ body::webkit-scrollbar-thumb:hover {
 
 .overlay {
   position: fixed;
-  top: 40px;
+  top: 30px;
   left: 0;
   width: 100%;
   height: 100vh;
@@ -326,6 +326,7 @@ body::webkit-scrollbar-thumb:hover {
   white-space: nowrap;
   width: 100%;
   position: relative;
+  z-index: 999;
 }
 
 .top-bar-item {
@@ -342,10 +343,10 @@ body::webkit-scrollbar-thumb:hover {
 
 @keyframes marquee {
   0% {
-    transform: translateX(400%);
+    transform: translateX(450%);
   }
   100% {
-    transform: translateX(-400%);
+    transform: translateX(-450%);
   }
 }
 
@@ -424,7 +425,7 @@ body::webkit-scrollbar-thumb:hover {
   align-items: center;
   padding: 5px 0;
   box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.25);
-  z-index: 5;
+  z-index: 1000;
 }
 
 .action-btn {
@@ -443,6 +444,15 @@ body::webkit-scrollbar-thumb:hover {
 }
 
 /* ====================== MOBILE NAVIGATION HOVER ====================== */
+.fa-duotone.fa-shop:hover,
+.fa-duotone.fa-hammer:hover,
+.fa-duotone.fa-house-chimney:hover,
+.fa-duotone.fa-cart-shopping:hover {
+  --fa-primary-color: #fff;
+  --fa-secondary-color: #fff;
+  --fa-secondary-opacity: 1;
+}
+
 .action-btn:hover {
   background-color: #4c00b0;
   color: var(--nav-color);
@@ -461,14 +471,7 @@ body::webkit-scrollbar-thumb:hover {
 }
 
 /* Individual hover styles for each icon */
-.fa-duotone.fa-shop:hover,
-.fa-duotone.fa-hammer:hover,
-.fa-duotone.fa-house-chimney:hover,
-.fa-duotone.fa-cart-shopping:hover {
-  --fa-primary-color: #fff;
-  --fa-secondary-color: #fff;
-  --fa-secondary-opacity: 1;
-}
+
 
 /* .action-btn span:hover{
   color: var(--nav-color);
