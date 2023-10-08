@@ -336,16 +336,16 @@ body::webkit-scrollbar-thumb:hover {
 
 .marquee {
   display: flex;
-  animation: marquee 30s linear infinite;
+  animation: marquee 40s linear infinite;
   justify-content: center;
 }
 
 @keyframes marquee {
   0% {
-    transform: translateX(250%);
+    transform: translateX(400%);
   }
   100% {
-    transform: translateX(-250%);
+    transform: translateX(-400%);
   }
 }
 
