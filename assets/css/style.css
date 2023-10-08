@@ -345,7 +345,7 @@ body::webkit-scrollbar-thumb:hover {
     transform: translateX(250%);
   }
   100% {
-    transform: translateX(-200%);
+    transform: translateX(-250%);
   }
 }
 
