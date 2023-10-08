@@ -99,18 +99,33 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // JavaScript to dynamically adjust the mobile navigation menu's height
+// JavaScript to dynamically adjust the mobile navigation menu's height
 document.addEventListener("DOMContentLoaded", function () {
   function adjustMobileMenuHeight() {
     const mobileMenu = document.querySelector(".mobile-navigation-menu");
-    const topMobileBar = document.querySelector(".top-mobile-bar");
+    const topBar = document.querySelector(".top-bar"); // Change the class name here
     const windowHeight = window.innerHeight;
-    const topMobileBarHeight = topMobileBar.clientHeight;
+    const topBarHeight = topBar.clientHeight; // Change the class name here
 
     // Set the menu's height to a percentage of the window height minus the top bar height
-    mobileMenu.style.height = `${windowHeight - topMobileBarHeight}px`;
+    mobileMenu.style.height = `${windowHeight - topBarHeight}px`;
+  }
+
+  function toggleMenuShadow() {
+    const mobileMenu = document.querySelector(".mobile-navigation-menu");
+    const topBar = document.querySelector(".top-bar"); // Change the class name here
+    
+    // Toggle the box shadow class on the top bar
+    topBar.classList.toggle("top-bar-shadow"); // Change the class name here
+    
+    // Toggle the mobile menu visibility
+    mobileMenu.classList.toggle("menu-opened");
   }
 
   window.addEventListener("load", adjustMobileMenuHeight);
   window.addEventListener("resize", adjustMobileMenuHeight);
+
+  const menuToggleButton = document.querySelector(".menu-toggle");
+  menuToggleButton.addEventListener("click", toggleMenuShadow);
 });
 
