@@ -313,7 +313,7 @@ body::webkit-scrollbar-thumb:hover {
 /* ====================== HEADER  ====================== */
 
 /* =========== MOBILE BAR START  ============ */
-.top-mobile-bar {
+.top-bar {
   background-color: var(--main-color);
   font-size: 14px;
   text-align: center;
@@ -328,7 +328,7 @@ body::webkit-scrollbar-thumb:hover {
   position: relative;
 }
 
-.top-mobile-bar-item {
+.top-bar-item {
   display: inline-block;
   padding: 0 1.5rem; /* Add padding to give space between items */
   white-space: nowrap;
@@ -337,15 +337,15 @@ body::webkit-scrollbar-thumb:hover {
 .marquee {
   display: flex;
   animation: marquee 30s linear infinite;
-  animation-delay: -14.5s; /* Delay the start of the animation by the duration of one loop */
+  justify-content: center;
 }
 
 @keyframes marquee {
   0% {
-    transform: translateX(100%);
+    transform: translateX(200%);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-200%);
   }
 }
 
