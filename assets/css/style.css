@@ -513,6 +513,7 @@ body::webkit-scrollbar-thumb:hover {
   visibility: hidden;
   transition: 0.5s ease;
   z-index: 1000;
+  overflow: scroll;
 }
 
 .mobile-navigation-menu.active {
