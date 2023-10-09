@@ -509,7 +509,7 @@ body::webkit-scrollbar-thumb:hover {
 
   box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.1);
   overflow-y: scroll;
-  overscroll-behavior-y: contain;
+  overscroll-behavior: contain;
   visibility: hidden;
   transition: 0.5s ease;
   z-index: 1000;
